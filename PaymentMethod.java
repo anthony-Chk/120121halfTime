@@ -3,18 +3,19 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Profile extends JFrame {
+public class PaymentMethod extends JFrame {
     private JPanel mainPanel;
     private JLabel logoImage;
     private JButton profileButton;
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
-    private JButton editProfileButton;
-    private JButton managePaymentMethodsButton;
-    private JButton transactionHistoryButton;
+    private JButton saveButton;
+    private JTextField textField1;
+    private JTextField zTextField;
+    private JTextField textField2;
 
-    public Profile(String name) {
+    public PaymentMethod(String name) {
         super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -45,23 +46,12 @@ public class Profile extends JFrame {
                 dispose();
             }
         });
-        editProfileButton.addActionListener(new ActionListener() {
+        saveButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame profile = new PersonalInfo("personal information");
+                JFrame save = new Profile("profile");
                 dispose();
             }
         });
-        managePaymentMethodsButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame manage = new PaymentMethod("payments");
-                dispose();
-            }
-        });
-    }
-    public static void main(String[] args)
-    {
-       JFrame profile = new Profile("profile");
     }
 }
