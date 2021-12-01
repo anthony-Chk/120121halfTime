@@ -3,24 +3,29 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class PersonalInfo extends JFrame{
+public class Drinks extends JFrame {
     private JPanel mainPanel;
     private JLabel logoImage;
     private JButton profileButton;
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
-    private JFormattedTextField nameFormattedTextField;
-    private JFormattedTextField addressFormattedTextField;
-    private JFormattedTextField phoneFormattedTextField;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JButton saveButton;
+    private JButton sidesButton;
+    private JButton pizzaButton;
+    private JButton beveragesButton;
+    private JPanel pizzaPanel;
+    private JButton Beverages;
+    private JTextArea regularRButton;
+    private JTextArea thinRButton;
+    private JTextArea largeRButton;
+    private JTextArea smallRButton;
+    private JTextArea mediumRButton;
+    private JButton m1RButton;
+    private JTextArea lemonadeTextArea;
+    private JTextArea quantityTextField;
 
-    public PersonalInfo(String personal_information) {
-
-        super(personal_information);
+    public Drinks(String name) {
+        super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
@@ -50,5 +55,6 @@ public class PersonalInfo extends JFrame{
                 dispose();
             }
         });
+
     }
 }

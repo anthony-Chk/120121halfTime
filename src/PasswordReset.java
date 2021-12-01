@@ -45,6 +45,13 @@ public class PasswordReset extends JFrame {
                 dispose();
             }
         });
+        Delivery.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame resetButton = new Thankyoupassword("Thanks");
+                dispose();
+            }
+        });
     }
 
 }

@@ -33,7 +33,7 @@ public class Sides extends JFrame{
     private JButton minusquantity1;
     private JRadioButton marinara1;
     private JRadioButton marinara2;
-    private JButton Checkout;
+    private JButton NextPage;
     private JTextArea quantity3;
     private JButton plusquantity3;
     private JButton minusquantity3;
@@ -135,6 +135,13 @@ public class Sides extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 quantity[0] = quantity[0] +1;
                 quantity3.setText(String.valueOf(quantity[0]));
+            }
+        });
+        profileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame accountCreation = new Profile("Account Creator");
+                dispose();
             }
         });
     }

@@ -45,6 +45,13 @@ public class Contact extends JFrame{
                 dispose();
             }
         });
+        profileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame accountCreation = new Profile("Account Creator");
+                dispose();
+            }
+        });
     }
 
 }

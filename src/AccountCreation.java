@@ -53,6 +53,19 @@ public class AccountCreation extends JFrame{
                 dispose();
             }
         });
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame thankyou = new JoiningMessage("thanks");
+                dispose();
+            }
+        });
     }
     public void checkInformation() {
         String tempString;

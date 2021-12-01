@@ -84,7 +84,7 @@ public class PizzaCreator extends JFrame {
         profileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame accountCreation = new AccountCreation("Account Creator");
+                JFrame accountCreation = new Profile("Account Creator");
                 dispose();
             }
         });
