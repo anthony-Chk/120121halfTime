@@ -3,28 +3,22 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Drinks extends JFrame {
+public class Myorder extends JFrame{
     private JPanel mainPanel;
     private JLabel logoImage;
     private JButton profileButton;
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
-    private JButton sidesButton;
-    private JButton pizzaButton;
-    private JButton beveragesButton;
-    private JPanel pizzaPanel;
-    private JButton Beverages;
-    private JTextArea regularRButton;
-    private JTextArea thinRButton;
-    private JTextArea largeRButton;
-    private JTextArea smallRButton;
-    private JTextArea mediumRButton;
-    private JButton m1RButton;
-    private JTextArea lemonadeTextArea;
-    private JTextArea quantityTextField;
+    private JButton editProfileButton;
+    private JTextArea pizzaOrder;
+    private JButton continueToCheckoutButton;
+    private JTextArea sidesOrder;
+    private JTextArea drinkOrder;
+    private JTextArea textArea1;
+    private JTextArea textArea2;
 
-    public Drinks(String name) {
+    public Myorder(String name) {
         super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -52,20 +46,6 @@ public class Drinks extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame contact = new Contact("Contact Us");
-                dispose();
-            }
-        });
-        pizzaButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame pizza = new PizzaCreator("Pizza menu");
-                dispose();
-            }
-        });
-        sidesButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame sides = new Sides("side items");
                 dispose();
             }
         });

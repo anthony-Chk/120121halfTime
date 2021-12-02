@@ -183,9 +183,13 @@ public class PizzaCreator extends JFrame {
                     System.out.println(userPizzaOrder.get(i));
 
                 }
+
+
                 JFrame sidesScreen = new Sides("Sides");
                 dispose();
             }
+
+
         });
 
         homeButton.addActionListener(new ActionListener() {
@@ -223,11 +227,21 @@ public class PizzaCreator extends JFrame {
                 dispose();
             }
         });
+        beveragesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame drinks = new Drinks("beverages");
+                dispose();
+            }
+        });
+
+
     }
 
 
     public Pizza saveOrder(int[] quantity) {
         //variables
+        String order="";
         char size='n';
         char crust='n';
         int m1=0;
@@ -244,6 +258,7 @@ public class PizzaCreator extends JFrame {
         //Button Functionality
         if (smallRButton.isSelected()) {
             size = 's';
+            order+=size;
         }
         else if (mediumRButton.isSelected()) {
             size ='m';
@@ -367,6 +382,7 @@ public class PizzaCreator extends JFrame {
         }
 
         return new Pizza(size, crust, m1,m2,m3,t1,t2,t3,t4,t5,t6,n);
+
     }
 
 

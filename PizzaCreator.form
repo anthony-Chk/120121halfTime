@@ -401,7 +401,7 @@
                   <text value="Green Pepper"/>
                 </properties>
               </component>
-              <component id="a96eb" class="javax.swing.JRadioButton">
+              <component id="a96eb" class="javax.swing.JRadioButton" binding="t3RButton">
                 <constraints>
                   <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="10" use-parent-layout="false"/>
                 </constraints>
@@ -415,7 +415,7 @@
                   <text value="Onion"/>
                 </properties>
               </component>
-              <component id="e757a" class="javax.swing.JRadioButton">
+              <component id="e757a" class="javax.swing.JRadioButton" binding="t4RButton">
                 <constraints>
                   <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="10" use-parent-layout="false"/>
                 </constraints>
@@ -429,7 +429,7 @@
                   <text value="Tomato"/>
                 </properties>
               </component>
-              <component id="3b519" class="javax.swing.JRadioButton">
+              <component id="3b519" class="javax.swing.JRadioButton" binding="t5RButton">
                 <constraints>
                   <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="10" use-parent-layout="false"/>
                 </constraints>
@@ -443,7 +443,7 @@
                   <text value="Mushroom"/>
                 </properties>
               </component>
-              <component id="ff48f" class="javax.swing.JRadioButton">
+              <component id="ff48f" class="javax.swing.JRadioButton" binding="t6RButton">
                 <constraints>
                   <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="10" use-parent-layout="false"/>
                 </constraints>

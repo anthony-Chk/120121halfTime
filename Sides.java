@@ -144,6 +144,13 @@ public class Sides extends JFrame{
                 dispose();
             }
         });
+        beveragesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame drinks = new Drinks("beverages");
+                dispose();
+            }
+        });
     }
     public static void main(String[] args)
     {
