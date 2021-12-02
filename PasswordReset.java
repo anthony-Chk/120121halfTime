@@ -9,7 +9,7 @@ public class PasswordReset extends JFrame {
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
-    private JButton Delivery;
+    private JButton reset;
     private JTextField textField1;
     private JTextArea pleaseEnterEmailToTextArea;
 
@@ -45,10 +45,10 @@ public class PasswordReset extends JFrame {
                 dispose();
             }
         });
-        Delivery.addActionListener(new ActionListener() {
+        reset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame resetButton = new Thankyoupassword("Thanks");
+                JFrame reset = new Thanksreset("thanks");
                 dispose();
             }
         });

@@ -304,7 +304,14 @@ public class Drinks extends JFrame {
                 dispose();
             }
         });
-
+        checkOutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Drink dInput = saveOrder();
+                JFrame orderScreen = new Myorder("Shopping Cart", pInput, sInput, dInput);
+                dispose();
+            }
+        });
 
         //Quantity Buttons
         this.qTextField.setText(String.valueOf(quantity1[0]));
@@ -435,5 +442,24 @@ public class Drinks extends JFrame {
 
     }
 
+    public Drink saveOrder() {
+        int drink1 = quantity1[0];
+        int drink2 = quantity2[0];
+        int drink3 = quantity3[0];
+        int drink4 = quantity4[0];
+        int drink5 = quantity5[0];
+        int drink6 = quantity6[0];
+        int drink7 = quantity7[0];
 
+        int d1Siz = d1Size.getSelectedIndex();
+        int d2Siz = d2Size.getSelectedIndex();
+        int d3Siz = d3Size.getSelectedIndex();
+        int d4Siz = d4Size.getSelectedIndex();
+        int d5Siz = d5Size.getSelectedIndex();
+        int d6Siz = d6Size.getSelectedIndex();
+        int d7Siz = d7Size.getSelectedIndex();
+
+        return new Drink(drink1, drink2, drink3, drink4, drink5, drink6, drink7, d1Siz, d2Siz, d3Siz, d4Siz, d5Siz, d6Siz, d7Siz);
+
+    }
 }

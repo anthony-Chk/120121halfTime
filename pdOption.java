@@ -14,7 +14,6 @@ public class pdOption extends JFrame{
     private JButton pleaseChooseYourOptionButton;
     private JButton pickup;
 
-
     public pdOption(String name) {
         super(name);
 
@@ -49,7 +48,7 @@ public class pdOption extends JFrame{
         Delivery.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               JFrame delivery = new orderReviewDel("Delivery");
+                JFrame delivery = new orderReviewDeliver("Delivery");
             }
         });
         pickup.addActionListener(new ActionListener() {

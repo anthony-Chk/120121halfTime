@@ -32,7 +32,7 @@ public class Pizza {
         return "size: " + size + ", " + "crust: " + crust + "\n" +
                 "meat: " + meat1 + ", " + meat2 + ", " + meat3 + "\n" +
                 "toppings: " + topping1 + ", " + topping2 + ", " + topping3 + ", " + topping4 + ", " +
-                topping5 + ", " + topping6 + ", \n" +
+                    topping5 + ", " + topping6 + ", \n" +
                 "quantity: " + quantity;
     }
 

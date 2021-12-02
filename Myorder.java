@@ -18,7 +18,7 @@ public class Myorder extends JFrame{
     private JTextArea textArea1;
     private JTextArea textArea2;
 
-    public Myorder(String name) {
+    public Myorder(String name, Pizza p, Side s, Drink d) {
         super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -49,12 +49,21 @@ public class Myorder extends JFrame{
                 dispose();
             }
         });
+        profileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame profile = new Profile("Profile");
+                dispose();
+            }
+        });
         continueToCheckoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame option = new pdOption("orderchoice");
+                JFrame order = new pdOption("");
                 dispose();
             }
         });
     }
+
+
 }

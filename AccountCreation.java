@@ -35,7 +35,9 @@ public class AccountCreation extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 checkInformation();
-
+                //add save method
+                JFrame welcomeMessage = new JoiningMessage("Welcome to Mom and Pop's Pizza Crew!");
+                dispose();
             }
         });
 
@@ -53,19 +55,7 @@ public class AccountCreation extends JFrame{
                 dispose();
             }
         });
-        saveButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
 
-            }
-        });
-        saveButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame thankyou = new JoiningMessage("thanks");
-                dispose();
-            }
-        });
     }
     public void checkInformation() {
         String tempString;
@@ -83,12 +73,8 @@ public class AccountCreation extends JFrame{
             errorField.setText("Invalid phone number");
         }
 
-        tempPass = passField.getPassword();
-        for (int i=0; i<tempPass.length+1; i++) {
-            if (tempPass[i] != passField2.getPassword()[i]) {
-                errorField.setText("Passwords do not match");
-            }
-        }
+
+
 
     }
 

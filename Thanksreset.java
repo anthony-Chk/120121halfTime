@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class JoiningMessage extends JFrame{
+public class Thanksreset extends JFrame{
     private JPanel mainPanel;
     private JPanel Header;
     private JLabel logoImage;
@@ -11,9 +11,9 @@ public class JoiningMessage extends JFrame{
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
-    private JTextPane thankYouForJoiningTextPane;
+    private JTextPane thankYouYourPasswordTextPane;
 
-    public JoiningMessage(String name) {
+    public Thanksreset(String name) {
         super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -53,6 +53,7 @@ public class JoiningMessage extends JFrame{
             }
         });
     }
-
-
+    public static void main(String[] args){
+        JFrame thanks =new Thanksreset("thanks");
+    }
 }

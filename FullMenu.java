@@ -6,13 +6,13 @@ import java.awt.event.ActionListener;
 public class FullMenu extends JFrame{
 
     private JPanel mainPanel;
-    private JLabel logoImage;
-    private JButton profileButton;
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
     private JButton sidesButton;
     private JButton pizzaButton;
+    private JLabel logoImage;
+    private JButton profileButton;
     private JButton beveragesButton;
     private JTextArea sizeSMLTextArea;
     private JTextPane breadSticks$4BreadStickBitesTextPane;
@@ -60,6 +60,20 @@ public class FullMenu extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame sides = new Sides("Sides");
+                dispose();
+            }
+        });
+        profileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame profile = new Profile("Profile");
+                dispose();
+            }
+        });
+        beveragesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame beverage = new Drinks("Beverages");
                 dispose();
             }
         });

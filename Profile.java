@@ -44,23 +44,19 @@ public class Profile extends JFrame {
                 dispose();
             }
         });
-        editProfileButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame profile = new PersonalInfo("personal information");
-                dispose();
-            }
-        });
         managePaymentMethodsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame manage = new PaymentMethod("payments");
+                JFrame manage = new PaymentMethod("Payment Methods");
                 dispose();
             }
         });
-    }
-    public static void main(String[] args)
-    {
-       JFrame profile = new Profile("profile");
+        editProfileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame profileEdit = new PersonalInfo("Edit Profile");
+                dispose();
+            }
+        });
     }
 }

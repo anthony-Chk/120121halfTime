@@ -49,17 +49,17 @@ public class Login extends JFrame{
                 dispose();
             }
         });
-        signUpButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame signup = new AccountCreation("signup");
-                dispose();
-            }
-        });
         forgotPasswordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame forgotpassword = new PasswordReset("forgot password");
+                JFrame pass = new PasswordReset("password");
+                dispose();
+            }
+        });
+        signUpButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame profile = new AccountCreation("account");
                 dispose();
             }
         });

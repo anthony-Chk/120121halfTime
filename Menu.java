@@ -54,6 +54,8 @@ public class Menu extends JFrame{
                 dispose();
             }
         });
+
+
     }
 
     public static void main(String[] args) {

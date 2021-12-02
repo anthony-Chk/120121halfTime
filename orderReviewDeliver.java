@@ -3,17 +3,20 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class JoiningMessage extends JFrame{
+public class orderReviewDeliver extends JFrame{
     private JPanel mainPanel;
-    private JPanel Header;
     private JLabel logoImage;
     private JButton profileButton;
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
-    private JTextPane thankYouForJoiningTextPane;
+    private JTextArea pizzaOrder;
+    private JButton placeYourOrderButton;
+    private JTextArea sidesOrder;
+    private JTextArea textArea1;
+    private JTextArea textArea2;
 
-    public JoiningMessage(String name) {
+    public orderReviewDeliver(String name) {
         super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -22,7 +25,6 @@ public class JoiningMessage extends JFrame{
         this.setMinimumSize(new Dimension(1080, 720));
 
         this.pack();
-
 
         homeButton.addActionListener(new ActionListener() {
             @Override
@@ -45,14 +47,12 @@ public class JoiningMessage extends JFrame{
                 dispose();
             }
         });
-        profileButton.addActionListener(new ActionListener() {
+        placeYourOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame accountCreation = new Profile("Account Creator");
+                JFrame placeOrder = new OrdercomDelivery("delivery");
                 dispose();
             }
         });
     }
-
-
 }

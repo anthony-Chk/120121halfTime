@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 public class PersonalInfo extends JFrame{
     private JPanel mainPanel;
+    private JButton saveButton;
     private JLabel logoImage;
     private JButton profileButton;
     private JButton homeButton;
@@ -16,11 +17,9 @@ public class PersonalInfo extends JFrame{
     private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
-    private JButton saveButton;
 
-    public PersonalInfo(String personal_information) {
-
-        super(personal_information);
+    public PersonalInfo(String name) {
+        super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
@@ -29,6 +28,7 @@ public class PersonalInfo extends JFrame{
 
         this.pack();
 
+        //Navigation
         homeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -50,5 +50,13 @@ public class PersonalInfo extends JFrame{
                 dispose();
             }
         });
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame profile = new Profile("Profile");
+                dispose();
+            }
+        });
     }
+
 }
