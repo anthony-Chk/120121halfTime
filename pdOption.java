@@ -49,7 +49,7 @@ public class pdOption extends JFrame{
         Delivery.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               JFrame delivery = new OrdercomDelivery("Delivery");
+               JFrame delivery = new orderReviewDel("Delivery");
             }
         });
         pickup.addActionListener(new ActionListener() {

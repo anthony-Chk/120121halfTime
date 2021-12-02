@@ -151,6 +151,13 @@ public class Sides extends JFrame{
                 dispose();
             }
         });
+        NextPage.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame drinks = new Drinks("order");
+                dispose();
+            }
+        });
     }
     public static void main(String[] args)
     {

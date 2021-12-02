@@ -23,6 +23,7 @@ public class Drinks extends JFrame {
     private JButton m1RButton;
     private JTextArea lemonadeTextArea;
     private JTextArea quantityTextField;
+    private JButton checkOutButton;
 
     public Drinks(String name) {
         super(name);
@@ -66,6 +67,13 @@ public class Drinks extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame sides = new Sides("side items");
+                dispose();
+            }
+        });
+        checkOutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame myorder = new Myorder("order");
                 dispose();
             }
         });

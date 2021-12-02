@@ -134,7 +134,7 @@
               <text value="Beverages"/>
             </properties>
           </component>
-          <grid id="7119f" binding="pizzaPanel" layout-manager="GridLayoutManager" row-count="8" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
+          <grid id="7119f" binding="pizzaPanel" layout-manager="GridLayoutManager" row-count="9" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -657,6 +657,22 @@
                   <horizontalAlignment value="0"/>
                   <selected value="false"/>
                   <text value="+"/>
+                </properties>
+              </component>
+              <component id="e982c" class="javax.swing.JButton" binding="checkOutButton">
+                <constraints>
+                  <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="2" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="40"/>
+                    <preferred-size width="-1" height="40"/>
+                    <maximum-size width="-1" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-8774108"/>
+                  <enabled value="true"/>
+                  <font name="Arial Black" size="22" style="0"/>
+                  <foreground color="-1"/>
+                  <text value="Check Out"/>
                 </properties>
               </component>
             </children>

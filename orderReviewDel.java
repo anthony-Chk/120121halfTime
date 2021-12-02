@@ -3,22 +3,20 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Myorder extends JFrame{
+public class orderReviewDel extends JFrame{
     private JPanel mainPanel;
     private JLabel logoImage;
     private JButton profileButton;
     private JButton homeButton;
     private JButton menuButton;
     private JButton contactUsButton;
-    private JButton editProfileButton;
     private JTextArea pizzaOrder;
-    private JButton continueToCheckoutButton;
+    private JButton placeYourOrderButton;
     private JTextArea sidesOrder;
-    private JTextArea drinkOrder;
     private JTextArea textArea1;
     private JTextArea textArea2;
 
-    public Myorder(String name) {
+    public orderReviewDel(String name) {
         super(name);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -49,10 +47,10 @@ public class Myorder extends JFrame{
                 dispose();
             }
         });
-        continueToCheckoutButton.addActionListener(new ActionListener() {
+        placeYourOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame option = new pdOption("orderchoice");
+                JFrame placeOrder = new OrdercomDelivery("delivery");
                 dispose();
             }
         });

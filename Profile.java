@@ -12,7 +12,6 @@ public class Profile extends JFrame {
     private JButton contactUsButton;
     private JButton editProfileButton;
     private JButton managePaymentMethodsButton;
-    private JButton transactionHistoryButton;
 
     public Profile(String name) {
         super(name);
